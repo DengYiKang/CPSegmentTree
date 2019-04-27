@@ -32,8 +32,8 @@ Construction:
 
 ```c++
 /*
-	a[]:			the input array
-	v:				the current index
+	a[]:		the input array
+	v:		the current index
 	left, right:	the left boundary of the segment
 */
 void build(int a[], int v, int left, int right){
@@ -52,8 +52,8 @@ void build(int a[], int v, int left, int right){
 
 ```c++
 /*
-	l, r:			the boundary of the query
-	v:				the current index
+	l, r:		the boundary of the query
+	v:		the current index
 	left, right:	the boundaries of the segment
 */
 int sum(int v, int left, int right, int l, int r){
@@ -71,10 +71,10 @@ int sum(int v, int left, int right, int l, int r){
 
 ```c++
 /*
-	v:				the current index
+	v:		the current index
 	left, right:	the boundaries of the segment
-	pos:			the index to be updated
-	new_val:		updated value
+	pos:		the index to be updated
+	new_val:	updated value
 */
 void update(int v, int left, int right, int pos, int new_val){
 	if(left==right) t[v]=new_val;
