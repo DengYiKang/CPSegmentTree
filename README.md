@@ -12,7 +12,7 @@
 
 A Segment Tree is a data structure that allows answering range queries over an array effectively, while still being flexible enough to allow modifying the array. 
 
-We compute and store the sum of the elements of the whole array( the sum of the segment a[0...n-1] ). We then split the array into two halves a[0...n/2] and a[n/2...n-1] and compute the sum of each halve and store them.
+We compute and store the sum of the elements of the whole array( the sum of the segment $a[0...n-1]$ ). We then split the array into two halves $a[0...n/2]$ and $a[n/2...n-1]$ and compute the sum of each halve and store them.
 
 Consider the number of nodes in the worst case:
 
