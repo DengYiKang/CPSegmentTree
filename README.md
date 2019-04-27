@@ -16,7 +16,7 @@ We compute and store the sum of the elements of the whole array( the sum of the 
 
 Consider the number of nodes in the worst case:
 
-![pic](.\sum-segment-tree.png)
+![pic](\sum-segment-tree.png)
 
 The number of nodes in the worst case can be estimated by the sum $\sum_{i=0}^{k=\left \lceil \log n \right \rceil}{2^k}=2^{\left \lceil \log n \right \rceil +1} <4n$   
 
