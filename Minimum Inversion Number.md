@@ -2,6 +2,8 @@
 
 ## (HDU-1394)
 
+[TOC]
+
 The inversion number of a given number sequence $a_1, a_2, ..., a_n$ is the number of pairs $(a_i, a_j)$ that satisfy $i < j$ and $a_i > a_j$. 
 
 For a given sequence of numbers $a_1, a_2, ..., a_n$, if we move the first $m >= 0$ numbers to the end of the sequence, we will obtain another sequence. There are totally n such sequences as the following: 
