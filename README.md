@@ -12,11 +12,11 @@
 
 A Segment Tree is a data structure that allows answering range queries over an array effectively, while still being flexible enough to allow modifying the array. 
 
-We compute and store the sum of the elements of the whole array( the sum of the segment a[0...n-1] ). We then split the array into two halves a[0...n/2] and a[n/2...n-1] and compute the sum of each halve and store them.
+We compute and store the sum of the elements of the whole array( the sum of the segment $a[0...n-1]$ ). We then split the array into two halves $a[0...n/2]$ and $a[n/2...n-1]$ and compute the sum of each halve and store them.
 
 Consider the number of nodes in the worst case:
 
-![](.\sum-segment-tree.png)
+![](https://github.com/DengYiKang/CodePractice/blob/master/sum-segment-tree.png)
 
 The number of nodes in the worst case can be estimated by the sum $\sum_{i=0}^{k=\left \lceil \log n \right \rceil}{2^k}=2^{\left \lceil \log n \right \rceil +1} <4n$   
 
@@ -32,8 +32,8 @@ Construction:
 
 ```c++
 /*
-	a[]:			the input array
-	v:				the current index
+	a[]:		the input array
+	v:		the current index
 	left, right:	the left boundary of the segment
 */
 void build(int a[], int v, int left, int right){
@@ -52,8 +52,8 @@ void build(int a[], int v, int left, int right){
 
 ```c++
 /*
-	l, r:			the boundary of the query
-	v:				the current index
+	l, r:		the boundary of the query
+	v:		the current index
 	left, right:	the boundaries of the segment
 */
 int sum(int v, int left, int right, int l, int r){
@@ -71,10 +71,10 @@ int sum(int v, int left, int right, int l, int r){
 
 ```c++
 /*
-	v:				the current index
+	v:		the current index
 	left, right:	the boundaries of the segment
-	pos:			the index to be updated
-	new_val:		updated value
+	pos:		the index to be updated
+	new_val:	updated value
 */
 void update(int v, int left, int right, int pos, int new_val){
 	if(left==right) t[v]=new_val;
