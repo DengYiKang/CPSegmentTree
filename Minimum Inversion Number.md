@@ -1,6 +1,6 @@
 # Minimum Inversion Number
 
-## (HDU-1394)
+## HDU 1394
 
 [TOC]
 
