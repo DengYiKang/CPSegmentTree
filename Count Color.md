@@ -2,6 +2,8 @@
 
 ## POJ 2777
 
+[TOC]
+
 Chosen Problem Solving and Program design as an optional course, you are required to solve all kinds of problems. Here, we get a new problem. 
 
 There is a very long board with length $L$ centimeter, $L$ is a positive integer, so we can evenly divide the board into $L$ segments, and they are labeled by $1, 2, ... L$ from left to right, each is 1 centimeter long. Now we have to color the board - one segment with only one color. We can do following two operations on the board: 
